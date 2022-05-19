@@ -1,0 +1,19 @@
+import type { NextPage } from 'next'
+import React, { FC } from 'react';
+import tw from 'twin.macro';
+import { Layout } from '@/components/wrappers/Layout';
+
+/**
+ * {{pascalCase name}}
+ */
+const Page: FC<NextPage> = (props) => {
+  return (
+    <Layout>
+      <PageContainer>{{pascalCase name}}</PageContainer>
+    </Layout>
+  );
+};
+
+export default Page;
+
+const PageContainer = tw.div``;

@@ -1,0 +1,20 @@
+import React, { createContext, FC, useContext } from 'react';
+
+type {{pascalCase name}}Value = Record<string, any>;
+
+const {{pascalCase name}} =  createContext<{{pascalCase name}}Value>({});;
+
+const {{pascalCase name}}Provider: FC = ({ children }) => {
+  const context: {{pascalCase name}}Value = {};
+
+  return (
+    <{{pascalCase name}}.Provider value={context}>{children}</{{pascalCase name}}.Provider>
+  );
+};
+
+const use{{pascalCase name}} = (): {{pascalCase name}}Value => {
+  const {{camelCase name}}Ctx = useContext({{pascalCase name}});
+  return {{camelCase name}}Ctx;
+};
+
+export { {{pascalCase name}}, {{pascalCase name}}Provider, use{{pascalCase name}} };
