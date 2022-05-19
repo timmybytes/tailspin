@@ -7,6 +7,7 @@ module.exports = {
     '\\.(scss|sass|css)$': 'identity-obj-proxy',
     '@test/(.*)$': '<rootDir>/test/$1',
     '@components/(.*)$': '<rootDir>/src/components/$1',
+    '@config/(.*)$': '<rootDir>/src/config/$1',
     '@data/(.*)$': '<rootDir>/src/data/$1',
     '@hooks/(.*)$': '<rootDir>/src/hooks/$1',
     '@pages/(.*)$': '<rootDir>/src/pages/$1',
