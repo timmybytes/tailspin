@@ -19,7 +19,7 @@ import { render, RenderOptions } from '@testing-library/react'
 
 const customRender = (
   ui: ReactElement,
-  options?: Omit<RenderOptions, 'wrapper'>
+  options?: Omit<RenderOptions, 'wrapper'>,
 ) =>
   render(ui, {
     /*
